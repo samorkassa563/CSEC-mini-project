@@ -1,0 +1,107 @@
+‎<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile - Eyob Kassa</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="container">
+        <header>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <h1 id="nameHeading">Eyob Kassa</h1>
+            <p class="tagline" id="tagline">Web Developer & Digital Creator</p>
+            <div class="counter">
+                <span id="visitCount">0</span>
+            </div>
+            <p class="counter-label">Times Visited</p>
+        </header>
+        
+        <div class="main-content">
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <h2>About Me</h2>
+                <div class="profile-img-container">
+                    <img src="Esubalew.jpg" 
+                         alt="Eyob Kassa" class="profile-img" id="profileImg">
+                    <div class="img-overlay" id="changeImgBtn">
+                        <span>Click to Change Photo</span>
+                    </div>
+                </div>
+                
+                <div class="bio-text">
+                    Hello! I'm Eyob Kassa , a passionate web developer creating modern, responsive websites.I specialize in front-end development with HTML,CSS,and JavaScript.</div>
+                
+                <div class="bio-text">Currently, I'm learning full stack developer while studying Computer Science at the University of Adama Science and technology Technology.I enjoy learning code.</div>
+                
+                <h3>My Skills</h3>
+                <div class="skills" id="skillsContainer">
+                    <!-- Skills will be added by JavaScript -->
+                </div>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="Portfolio">
+                        <i class="fas fa-briefcase"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="contact-section">
+                <h2>Contact Me</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" placeholder="Type your message here..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    
+                    <div id="formMessage" class="message"></div>
+                </form>
+                
+                <div style="margin-top: 30px; text-align: center;">
+                    <h3>Fun Facts</h3>
+                    <button id="funFactBtn" class="submit-btn" style="width: auto; padding: 10px 20px;">
+                        Show Random Fun Fact
+                    </button>
+                    <div id="funFact" style="margin-top: 15px; padding: 15px; background: #f8f9fa; border-radius: 8px; display: none;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2023 Eyob Kassa. Personal Profile Project.</p>
+            <p>Last updated: <span id="lastUpdated"></span></p>
+        </footer>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="script.js">
+        </script>
+</body>
+</html>
